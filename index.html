@@ -2,240 +2,370 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Steven DAHMS-DUC</title>
+    <title>Portoflio - Steven DAHMS-DUC</title>
+   
+   <style>
 
-    <style>
         body {
+            
             background-color: black;
             color: white;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-
-        h1, h2, p {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
+            position: relative;
+        
+         }
 
         .play-button {
+            
             background-color: bisque;
             border: none;
             border-radius: 100px;
             cursor: pointer;
             display: block;
-            margin: 10px auto;
+            margin: 10px;
+            margin-bottom: 20px;
             padding: 10px 30px;
             color: black;
-            width: 80%;
+       
         }
 
         .icon img {
+           
             height: 60px;
             width: 60px;
+       
         }
 
         .linkedin {
+            
             padding: 5px;
+        
+        }
+
+        h1 {
+            
+            color: white;
+            margin-top: 10px;
+            margin-left: 10px;
+        
+        }
+
+        h2 {
+            
+            color: lightblue;
+            margin-left: 10px;
+        
+        }
+
+        p {
+            
+            margin-left: 10px;
+        
+        }
+
+        .link {
+            
+            margin-left: 10px;
+            text-decoration: none;
+            color: red;
+       
         }
 
         .profile-container {
+            
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             margin-top: 20px;
+       
         }
 
         .profile-image {
-            margin-bottom: 20px;
+           
+            flex-shrink: 0;
+            margin-left: 10px;
+        
         }
 
         .profile-image img {
-            max-width: 100%;
-            height: auto;
+           
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
-        }
-
-        .profile-description {
-            max-width: 600px;
-            margin-left: 20px;
-            text-align: justify;
+        
         }
 
         .container {
+            
             display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-top: 20px;
+            margin-left: 10px;
+        
         }
 
         .image-container {
+            
             position: relative;
             display: inline-block;
+       
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+        .redac img {
+
+            width: 580px;
+            height: 400px;
             display: block;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .trynote img {
+
+            width: 700px;
+            height: 600px;
+            display: block;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .htb img {
+
+            width: 700px;
+            height: 600px;
+            display: block;
+            border: none;
+            border-radius: 5px;
+            
+        }
+
+        .winsec img {
+           
+            width:  870px;
+            height: 580px;
+            display: block;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .crynow img {
+            
+            width: 550px;
+            height: 350px;
+            display: block;
+            border: none;
+            border-radius: 5px;
+       
+        }
+
+        .bomber img {
+
+            width:  850px;
+            height: 800px;
+            display: block;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .profile-description {
+            
+            max-width: 600px;
+            margin-left: 20px;
+        
         }
 
         footer {
+            
             margin-top: 20px;
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: #ddd;
+       
         }
 
-        /* Media query pour les petits écrans */
-        @media (max-width: 768px) {
-            .profile-container {
-                flex-direction: column;
-            }
-
-            .play-button {
-                width: 90%;
-            }
-
-            .profile-image img {
-                width: 200px;
-                height: auto;
-            }
-
-            .profile-description {
-                margin-left: 0;
-                text-align: center;
-            }
-
-            h1, h2, p {
-                font-size: 1rem;
-            }
-        }
-
-        /* Media query pour très petits écrans (comme les téléphones) */
-        @media (max-width: 480px) {
-            h1, h2, p {
-                font-size: 0.9rem;
-            }
-
-            .play-button {
-                width: 100%;
-            }
-
-            .profile-image img {
-                width: 150px;
-            }
-
-            .image-container img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .profile-description {
-                max-width: 100%;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-        }
     </style>
+
 </head>
 
 <body>
 
     <h1>Message de bienvenue :</h1>
+
     <audio id="welcome" src="welcome.mp3"></audio>
     <button class="play-button" onclick="playAudio()">Message de bienvenue !</button>
 
     <script>
-        function playAudio() {
-            var audio = document.getElementById('welcome');
-            audio.play();
-        }
+       
+        function playAudio() {var audio = document.getElementById('welcome');
+        
+        audio.play();}
+   
     </script>
 
     <h1>Qui suis-je ? :</h1>
+
     <div class="profile-container">
+
         <div class="profile-image">
+            
             <img src="steven.jpg" alt="Steven DAHMS-DUC">
+       
         </div>
+
         <div class="linkedin">
+          
             <a href="https://www.linkedin.com/in/steven-dahms-duc/" class="icon" target="_blank">
+                
                 <img src="linkedin.png" alt="LinkedIn">
+          
             </a>
+        
         </div>
+
         <div class="profile-description">
+           
             <p>Je m'appelle Steven DAHMS-DUC, j'ai 18 ans.</p>
             <p>Je suis passionné par l'informatique, notamment la cybersécurité et la programmation en Python.</p>
             <p>Mon intérêt pour ces domaines remonte à mon enfance, lorsque j'ai eu la chance de me procurer mon premier ordinateur.</p>
+            <p>Plus je l'utilisais, plus je ressentais le besoin de comprendre comment cet outil fonctionnait.</p>
             <p>Ce questionnement m'a poussé à explorer non seulement le fonctionnement des ordinateurs eux-mêmes, mais aussi des réseaux informatiques et bien d'autres choses.</p>
-            <p>À l’heure actuelle, je souhaite me former afin d’acquérir de nouvelles compétences et connaissances qui me permettront de devenir technicien d'assistance en informatique.</p>
+            <p>À l’heure actuelle, je souhaite me former afin d’acquérir de nouvelles compétences et connaissances qui me permettront de devenir technicien d'assistance en informatique, mais aussi d'obtenir un diplôme qui facilitera l'accès à un emploi ou la poursuite d'études en cybersécurité, mon objectif étant de devenir pentester.</p>
+       
         </div>
+
     </div>
 
     <h1>Mes projets en Python :</h1>
 
     <h2>Rédac'Plainte :</h2>
     <p>Rédac'Plainte est un logiciel conçu pour simplifier la rédaction de plaintes judiciaires.</p>
+    <p>Grâce à une interface graphique intuitive dotée de champs de texte, il permet, une fois les informations saisies, de générer un document contenant l'ensemble des données fournies.</p>
+
     <a href="https://github.com/steven-itech/Redac-Plainte" class="link" target="_blank">Rédac'Plainte</a>
+
     <div class="container">
-        <div class="image-container">
-            <img src="Rédac'Plainte.png" alt="Rédac'Plainte">
+       
+        <div class="redac">
+           
+            <div class="image-container">
+           
+                <img src="Rédac'Plainte.png" alt="Rédac'Plainte">
+           
+            </div>
+        
         </div>
+   
     </div>
 
     <h2>Try'Note :</h2>
+   
     <p>Try'Note est un logiciel conçu pour rédiger des rapports en lien avec des missions disponibles sur<a href="https://tryhackme.com/" class="link" target="_blank">TryHackMe</a>.</p>
+    <p>Grâce à une interface graphique intuitive dotée de champs de texte, il permet, une fois les informations saisies, de générer un document contenant l'ensemble des données fournies.</p>
+
     <a href="https://github.com/steven-itech/Try-Note" class="link" target="_blank">Try'Note</a>
+
     <div class="container">
-        <div class="image-container">
-            <a href="Try'Note.mp4" target="_blank">
-                <img src="Try'Note.png" alt="Try'Note">
-            </a>
+      
+        <div class="trynote">
+          
+            <div class="image-container">
+             
+                <a href="Try'Note.mp4" target="_blank">
+                
+                    <img src="Try'Note.png" alt="Try'Note">
+              
+                </a>
+       
+            </div>
+       
         </div>
+   
     </div>
 
     <h2>Note'HTB :</h2>
+   
     <p>Note'HTB est un logiciel conçu pour rédiger des rapports en lien avec des missions disponibles sur<a href="https://hackethebox.com/" class="link" target="_blank">HackTheBox</a>.</p>
+    <p>Grâce à une interface graphique intuitive dotée de champs de texte, il permet, une fois les informations saisies, de générer un document contenant l'ensemble des données fournies.</p>
+
     <a href="https://github.com/steven-itech/Note-HTB" class="link" target="_blank">Note'HTB</a>
+
     <div class="container">
-        <div class="image-container">
-            <img src="Note'HTB.png" alt="Note'HTB">
+        
+        <div class="htb">
+           
+            <div class="image-container">
+             
+                <img src="Note'HTB.png" alt="Note'HTB">
+           
+            </div>
+        
         </div>
+    
     </div>
 
     <h2>Win'Sec :</h2>
-    <p>Win'Sec est un logiciel d’analyse forensique en ligne de commande.</p>
+   
+    <p>Win’Sec est un logiciel d’analyse forensique en ligne de commande, qui permet de créer une image mémoire et de l’analyser avec<a href="https://volatilityfoundation.org/about-volatility/" class="link" target="_blank">Volatility</a>.</p>
+    <p>Il est également possible d'enregistrer le résultat des analyses dans un document texte, afin de les consulter ultérieurement ou de garder une preuve en cas de compromissions.</p>
+
     <a href="https://github.com/steven-itech/WinSec" class="link" target="_blank">Win'Sec</a>
+
     <div class="container">
-        <div class="image-container">
+       
+        <div class="winsec">
+          
             <img src="Win'Sec.png" alt="Win'Sec">
+       
         </div>
+    
     </div>
 
     <h2>Cry'Now :</h2>
-    <p>Cry'Now est une preuve de concept (POC), démontrant la création d’un malware de type infostealer en Python.</p>
+    
+    <p>Cry'Now est une preuve de concept (POC), démontrant la facilité avec le langage de programmation Python de créer un malware de type infostealer. </p>
+    <p>Ce dernier permet non seulement de rendre partiellement un ordinateur inaccessible, mais aussi de générer une clé de registre désactivant le gestionnaire des tâches et de détecter l'ouverture de certains logiciels comme PowerShell, permettant de l’arrêter.</p>
+
     <a href="https://github.com/steven-itech/Cry-Now" class="link" target="_blank">Cry'Now</a>
+
     <div class="container">
-        <div class="image-container">
+        
+        <div class="crynow">
+          
             <img src="Cry'Now.png" alt="Cry'Now">
+       
         </div>
+   
     </div>
 
     <h2>E-Bomber :</h2>
-    <p>E-Bomber est un logiciel conçu pour envoyer une multitude de courriels.</p>
+   
+    <p>E-Bomber est un logiciel conçu pour envoyer une multitude de courriels dans un intervalle de temps donné.</p>
+    <p>Grâce à une interface graphique intuitive dotée de champs de texte, il permet, une fois les informations saisies, d'envoyer les courriels au destinataire choisi.</p>
+
     <a href="https://github.com/steven-itech/" class="link" target="_blank">E-Bomber</a>
+
     <div class="container">
-        <div class="image-container">
-            <img src="E-Bomber.png" alt="E-Bomber">
+        
+        <div class="bomber">
+           
+            <div class="image-container">
+           
+                <img src="E-Bomber.png" alt="E-Bomber">
+           
+            </div>
+        
         </div>
+    
     </div>
 
-    <footer>Ce site a été créé dans le cadre d'une présentation liée à la formation de technicien d'assistance en informatique proposée par l'AFPA de Strasbourg.</footer>
+    <footer class="footer">Ce site a été créé dans le but de faire une présentation, en lien avec la formation de technicien d'assistance en informatique proposé par l'AFPA de Strasbourg.</footer>
 
 </body>
 
